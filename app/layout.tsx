@@ -21,8 +21,15 @@ const strangerFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Stranger Visions - AI Image Generator",
-  description: "Transform your photos into the Upside Down with AI-powered dimension shifting",
+  title: "Stranger Things Image Generator | Transform Your Reality",
+  description:
+    "Enter the Upside Down. AI-powered image generator that transforms your photos into the Stranger Things universe. Powered by Nano-Banana-Pro.",
+  openGraph: {
+    title: "Stranger Things Image Generator",
+    description:
+      "One click to Dimension Shift your photos into the Upside Down.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

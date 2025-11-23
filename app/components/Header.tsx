@@ -25,14 +25,22 @@ const Header: React.FC<HeaderProps> = ({ onApiKeyClick }) => {
               d="M13 10V3L4 14h7v7l9-11h-7z"
             />
           </svg>
-          <h1 className="text-2xl md:text-3xl text-red-600 font-bold tracking-widest uppercase font-stranger drop-shadow-[0_0_5px_rgba(220,38,38,0.8)]">
-            Stranger Things
-          </h1>
+          <div className="flex flex-col -gap-1">
+            <h1 className="text-2xl md:text-3xl text-red-600 font-bold tracking-widest uppercase font-stranger drop-shadow-[0_0_5px_rgba(220,38,38,0.8)] leading-none">
+              Stranger Things
+            </h1>
+            <span className="text-[10px] md:text-xs text-red-400/80 font-mono tracking-[0.2em] uppercase pl-0.5">
+              Image Generator
+            </span>
+          </div>
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="text-xs text-red-400/70 font-mono hidden sm:block">
-            🍌 NANO-BANANA-PRO
+          <div className="text-xs text-red-400/70 font-mono hidden sm:flex flex-col items-end">
+            <span className="md:text-[10px] text-red-400/80 font-mono tracking-[0.2em] uppercase pl-0.5">
+              Powered by
+            </span>
+            <span>🍌 NANO-BANANA-PRO</span>
           </div>
           <button
             onClick={onApiKeyClick}
