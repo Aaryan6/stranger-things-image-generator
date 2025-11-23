@@ -272,8 +272,23 @@ export default function Home() {
           </div>
 
           <Gallery images={state.generatedImages} />
+
+          {/* Footer Credit */}
         </main>
       </div>
+          <footer className="absolute bottom-0 left-0 w-full text-center mt-12 pb-8 text-[10px] text-gray-600 font-mono">
+            <p>
+              Created by{" "}
+              <a
+                href="https://github.com/Aaryan6/stranger-things-image-generator"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-500 hover:text-red-400 hover:underline transition-colors"
+              >
+                Aaryan Patel
+              </a>
+            </p>
+          </footer>
 
       <ApiKeyModal
         isOpen={isApiKeyModalOpen}
